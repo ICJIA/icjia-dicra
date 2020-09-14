@@ -1,3 +1,6 @@
+import webpack from 'webpack'
+const PRODUCTION_BASE_PATH = '/dicra/'
+
 export default {
   /*
    ** Nuxt target
@@ -19,7 +22,7 @@ export default {
         content: process.env.npm_package_description || '',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/dicra/favicon.ico' }],
   },
   /*
    ** Global CSS
@@ -29,7 +32,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [],
+  plugins: ['~/plugins/static-mixin.js'],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -82,5 +85,16 @@ export default {
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {},
+  build: {
+    extend(config, { isDev }) {
+      config.plugins.push(
+        new webpack.DefinePlugin({
+          STATIC_PATH: JSON.stringify(isDev ? '' : PRODUCTION_BASE_PATH),
+        })
+      )
+    },
+  },
+  router: {
+    base: process.env.NODE_ENV === 'production' ? PRODUCTION_BASE_PATH : '/',
+  },
 }

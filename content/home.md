@@ -15,6 +15,6 @@ The online reporting submission form can be found by [clicking here](https://icj
 
 Any questions, comments, or concerns regarding the reporting or collection of information regarding deaths in custody should be directed to HDouglas.Otto@Illinois.gov. 
 
-<SubmitButton></SubmitButton>
+<submit-button></submit-button>
 
 

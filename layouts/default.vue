@@ -5,6 +5,11 @@
     <AppFooter></AppFooter>
   </v-app>
 </template>
+<script>
+export default {
+  mounted() {},
+}
+</script>
 
 <style>
 .hover {

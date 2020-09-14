@@ -8,10 +8,10 @@
     "email": "christopher.schweda@illinois.gov"
   },
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt generate && npm run banner",
+    "dev": "DEPLOY_ENV=DEV nuxt",
+    "build": "DEPLOY_ENV=GEN nuxt generate && npm run banner",
     "start": "nuxt start",
-    "generate": "nuxt generate && npm run banner",
+    "generate": "DEPLOY_ENV=GEN nuxt generate && npm run banner",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "npm run lint:js",
     "banner": "node generateBuildInfo.js",

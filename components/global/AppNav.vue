@@ -8,7 +8,7 @@
     /> -->
     <div style="width: 15px" />
     <img
-      src="/icjia-logo.png"
+      src="~static/icjia-logo.png"
       alt="Illinois Criminal Justice Information Authority"
       :width="logoWidth()"
       style="margin-left: -5px; margin-right: 8px"
@@ -40,7 +40,10 @@ export default {
       links: null,
     }
   },
-  mounted() {},
+  mounted() {
+    // eslint-disable-next-line no-undef
+    console.log('STATIC_PATH=', STATIC_PATH)
+  },
   methods: {
     // toggleDrawer() {
     //   EventBus.$emit("toggleDrawer");
