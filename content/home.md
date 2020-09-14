@@ -1,6 +1,8 @@
 ---
 title: DICRA Home
 description: 'The Death In Custody Reporting Act (DICRA) of 2013 requires that some states that receive funding under the Omnibus Crime Contral and Safe Streets Act of 1968 to report to the Attorney General quarterly information regarding the death of any individual under custody of law enforcement officers.'
+createdAt: '2020-09-14'
+updatedAt: '2020-09-14'
 ---
 
 # Death In Custody Reporting Act
@@ -15,6 +17,6 @@ The online reporting submission form can be found by [clicking here](https://icj
 
 Any questions, comments, or concerns regarding the reporting or collection of information regarding deaths in custody should be directed to HDouglas.Otto@Illinois.gov. 
 
-<submit-button></submit-button>
+<submit-button href="https://icjia.az1.qualtrics.com/jfe/form/SV_cZuWg0gnw2d9NXv"></submit-button>
 
 

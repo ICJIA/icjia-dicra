@@ -12,7 +12,7 @@ export default {
   props: {
     href: {
       type: String,
-      default: ' https://icjia.az1.qualtrics.com/jfe/form/SV_cZuWg0gnw2d9NXv',
+      default: '/',
     },
   },
 }
