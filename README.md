@@ -1,4 +1,4 @@
-# icjia-dicra
+# ICJIA Death In Custody Reporting Act (DICRA) 
 
 The Death In Custody Reporting Act (DICRA) of 2013 requires that some states that receive funding under the Omnibus Crime Contral and Safe Streets Act of 1968 to report to the Attorney General quarterly information regarding the death of any individual under custody of law enforcement officers.
 
