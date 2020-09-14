@@ -12,24 +12,24 @@
         <div style="font-size: 12px; color: #fff">
           &copy;&nbsp;{{ new Date().getFullYear() }}
           <strong>
-            <a href="http://icjia.state.il.us" class="footer-link"
+            <a
+              href="http://icjia.state.il.us"
+              class="footer-link"
+              target="_blank"
+              rel="noreferrer"
               >Illinois Criminal Justice Information Authority</a
             > </strong
           >&nbsp;|&nbsp;
           <strong>
-            <a href="/" target="_blank" class="footer-link" rel="noreferrer"
+            <a
+              href="https://github.com/ICJIA/icjia-dicra"
+              target="_blank"
+              class="footer-link"
+              rel="noreferrer"
               >Github</a
             >
           </strong>
         </div>
-        <!--<div class="mt-2" style="color: #222; font-size: 12px;">
-          <a
-            target="_blank"
-            href="https://icjia.az1.qualtrics.com/jfe/form/SV_78vgpBV1nmXxeDj"
-            >Click here</a
-          >
-          to volunteer as an R3 application reviewer.
-        </div>-->
       </v-card-text>
     </v-card>
   </v-footer>
