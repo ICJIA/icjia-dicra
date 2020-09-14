@@ -13,21 +13,9 @@
       :width="logoWidth()"
       style="margin-left: -5px; margin-right: 8px"
       class="hover"
-      @click="
-        $router.push('/').catch(() => {
-          $vuetify.goTo(0)
-        })
-      "
     />&nbsp;&nbsp;&nbsp;&nbsp;
 
-    <v-toolbar-title
-      class="heavy hover"
-      @click="
-        $router.push('/').catch((err) => {
-          $vuetify.goTo(0)
-        })
-      "
-    >
+    <v-toolbar-title class="heavy hover">
       <!-- <span style="" class="agency hover"
         >GRANT INFO<span
           v-if="!$vuetify.breakpoint.xs && !$vuetify.breakpoint.sm"
