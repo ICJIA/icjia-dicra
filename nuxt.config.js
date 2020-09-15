@@ -15,7 +15,7 @@ export default {
     htmlAttrs: {
       lang: 'en',
     },
-    title: process.env.npm_package_name || '',
+    titleTemplate: 'ICJIA DICRA | %s',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -41,6 +41,8 @@ export default {
    ** See https://nuxtjs.org/api/configuration-components
    */
   components: true,
+
+  /* Google Analytics ID: UA-150082887-9 */
   /*
    ** Nuxt.js dev-modules
    */
@@ -51,6 +53,12 @@ export default {
       '@nuxtjs/vuetify',
       {
         /* module options */
+      },
+    ],
+    [
+      '@nuxtjs/google-analytics',
+      {
+        id: 'UA-150082887-9',
       },
     ],
   ],
@@ -64,7 +72,14 @@ export default {
     '@nuxt/content',
     '@nuxtjs/dotenv',
     'nuxt-material-design-icons',
+    '@nuxtjs/sitemap',
   ],
+  sitemap: {
+    hostname: 'https://icjia.illinois.gov/',
+    gzip: true,
+    exclude: [],
+    routes: [],
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
