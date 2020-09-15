@@ -13,9 +13,10 @@
       :width="logoWidth()"
       style="margin-left: -5px; margin-right: 8px"
       class="hover"
+      @click="gotoHome"
     />&nbsp;&nbsp;&nbsp;&nbsp;
 
-    <v-toolbar-title class="heavy hover">
+    <v-toolbar-title class="heavy hover" @click="gotoHome">
       <!-- <span style="" class="agency hover"
         >GRANT INFO<span
           v-if="!$vuetify.breakpoint.xs && !$vuetify.breakpoint.sm"
@@ -55,6 +56,10 @@ export default {
       } else {
         return 90
       }
+    },
+    gotoHome() {
+      // console.log(this.$route)
+      this.$router.push('/')
     },
   },
 }
