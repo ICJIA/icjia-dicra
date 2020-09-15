@@ -42,7 +42,7 @@ export default {
   },
   mounted() {
     // eslint-disable-next-line no-undef
-    console.log('STATIC_PATH=', STATIC_PATH)
+    // console.log('STATIC_PATH=', STATIC_PATH)
   },
   methods: {
     // toggleDrawer() {

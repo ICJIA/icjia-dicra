@@ -18,7 +18,7 @@ export default {
     }
   },
   mounted() {
-    console.log(config)
+    // console.log(config)
   },
   head() {
     return {

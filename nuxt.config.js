@@ -1,6 +1,15 @@
 import webpack from 'webpack'
 const PRODUCTION_BASE_PATH = '/dicra/'
 
+function addBase(url) {
+  const base =
+    process.env.NODE_ENV === 'production' ? PRODUCTION_BASE_PATH : '/'
+  console.log(base + url)
+  return base + url
+}
+
+addBase('test')
+
 export default {
   /*
    ** Nuxt target
@@ -25,7 +34,7 @@ export default {
         content: process.env.npm_package_description || '',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/dicra/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: addBase('favicon.ico') }],
   },
   /*
    ** Global CSS
