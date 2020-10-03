@@ -34,7 +34,13 @@ export default {
         content: process.env.npm_package_description || '',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: addBase('favicon.ico') }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: addBase('favicon.ico') },
+      {
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css',
+      },
+    ],
   },
   /*
    ** Global CSS
